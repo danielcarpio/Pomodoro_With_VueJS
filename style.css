@@ -1,0 +1,202 @@
+html, body{
+    background-color: rgb(217, 85, 80);
+}
+
+#app {
+    width: 80%;
+    margin-left: 10%;
+    font-family: 'Courier New', monospace;
+}
+
+@media only screen and (max-width: 1024px) {
+    #app {
+        width: 100%;
+        margin-left: 0%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #app {
+        width: 100%;
+        margin-left: 0%;
+    }
+}
+
+
+/* Nav styles */
+nav {
+    border-bottom: 1px solid whitesmoke;
+    margin-bottom: 3em;
+    font-family: 'Courier New', monospace;
+    color: whitesmoke;
+}
+
+nav p {
+    font-size: 200%;
+    font-weight: bolder;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+/* Timer */
+#timer {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+@media only screen and (max-width: 1024px) {
+    #timer {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+#timer .selector {
+    width: 90%;
+    display: flex;
+    padding-left: 5%;
+    padding-left: 5%;
+    margin-bottom: 1em;
+}
+#timer .selector p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 33%;
+    cursor: pointer;
+    color: whitesmoke;
+}
+#timer .selector p:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+}
+#timer .selector p.selected {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+}
+#timer .selector p:active {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+}
+
+
+
+
+#timer .display {
+    color: whitesmoke;
+    font-size: 500%;
+}
+
+
+
+
+
+
+
+#timer .controls {
+    width: 90%;
+    display: flex;
+    padding-left: 5%;
+    padding-left: 5%;
+    margin-top: 1em;
+}
+#timer .controls p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 33%;
+    cursor: pointer;
+    color: whitesmoke;
+}
+#timer .controls p:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+}
+#timer .controls p.selected{
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+}
+#timer .controls p:active {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+}
+
+
+
+/* Todo List component styles */
+#todoListComponent {
+    margin-top: 2em;
+}
+#todoListComponent h5 {
+    margin-block-start: 0;
+    margin-block-end: 0.25em;
+    color: whitesmoke;
+    font-size: 200%;
+}
+#todoListComponent .inputTodoList{
+    width: 40%;
+    margin-right: 1%;
+    font-size: 125%;
+    background-color: rgb(217, 85, 80);
+    color: whitesmoke;
+    border: none;
+    border-bottom: 1px solid whitesmoke;
+}
+
+@media only screen and (max-width: 1024px) {
+    #todoListComponent .inputTodoList {
+        width: 70%;
+        margin-left: 1%;
+    }
+}
+
+#todoListComponent .inputTodoList:focus{
+    outline: none;
+}
+#todoListComponent button{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    padding: 0.5% 2%;
+    cursor: pointer;
+}
+
+#todoListComponent .todoList{
+    margin-top: 1em;
+    width: 90%;
+}
+@media only screen and (max-width: 1024px) {
+    #todoListComponent .todoList {
+        width: 98%;
+        margin-left: 1%;
+    }
+}
+
+#todoListComponent .todoList div{
+    color: rgb(85, 85, 85);
+    background-color: whitesmoke;
+    padding: 1%;
+    margin-bottom: 0.25em;
+    border: 1px solid rgb(85, 85, 85);
+    cursor: pointer;
+}
+
+#todoListComponent .todoList div:hover{
+    background-color: rgb(0,0,0,0.1);
+    color: whitesmoke;
+    text-decoration-line: line-through;
+    text-decoration-thickness: 5px;
+}
+
+#todoListComponent .todoList p{
+    font-size: 110%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}

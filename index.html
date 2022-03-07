@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" sizes="">
+    <script src="https://unpkg.com/vue@3"></script>
+    <title>Pomodoro Timer</title>
+</head>
+<body>
+    <div id="app">
+        <nav>
+            <p>Pomodoro</p>
+        </nav>
+        <timer></timer>
+        <todo-list></todo-list>
+    </div>
+
+    <script>
+        const app = Vue.createApp({});
+    </script>    
+    <script src="./components/todoList.js"></script>
+    <script src="./components/timer.js"></script>
+    <script>
+        app.mount('#app');
+    </script>
+</body>
+</html>
